@@ -1,0 +1,23 @@
+﻿
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    $(function () {
+        alert("start");
+            $.ajax({
+                type: "Post",
+                url: "/api/values",
+                data: { "":"nihao" },
+                dataType: "json",
+                success: function (data) {
+                    alert(data);
+                }
+            });
+    })
+
+</script>
+
+<div class="jumbotron">
+
+</div>
+
+
